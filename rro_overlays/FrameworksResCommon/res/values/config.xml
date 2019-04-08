@@ -135,6 +135,9 @@
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
+    <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">true</bool>
+
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 
@@ -399,6 +402,19 @@
          overlay, an empty string is passed in -->
     <string name="config_wlan_network_service_package">com.android.phone</string>
 
+    <!-- List of files pinned by the Pinner Service with the apex boot image b/119800099 -->
+    <string-array translatable="false" name="config_apexBootImagePinnerServiceFiles">
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/framework/arm64/apex.oat"</item>
+        <item>"/system/framework/arm64/apex-core-libart.oat"</item>
+        <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
+        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+        <item>"/system/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system/lib64/libsurfaceflinger.so"</item>
+    </string-array>
+
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
@@ -409,15 +425,18 @@
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
-        <item>/system/framework/arm/boot-mediatek-framework.vdex</item>
-        <item>/system/lib/libjavacrypto.so</item>
-        <item>/system/lib/libhidltransport.so</item>
-        <item>/system/framework/arm/boot-core-libart.oat</item>
-        <item>/system/framework/arm/boot-conscrypt.oat</item>
-        <item>/system/framework/arm/boot-core-libart.vdex</item>
-        <item>/system/framework/arm/boot-ext.vdex</item>
-        <item>/system/framework/arm/boot.vdex</item>
-        <item>/system/framework/arm/boot-framework.vdex</item>
+        <item>"/system/framework/arm64/boot-framework.oat"</item>
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/oat/arm64/services.odex"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/framework/arm64/boot.oat"</item>
+        <item>"/system/framework/arm64/boot-core-libart.oat"</item>
+        <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
+        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+        <item>"/product/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/product/priv-app/SystemUIGoogle/oat/arm64/SystemUIGoogle.odex"</item>
+        <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
     <!-- Configure tcp buffer sizes per network type in the form:
