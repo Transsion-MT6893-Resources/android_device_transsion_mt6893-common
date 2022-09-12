@@ -53,5 +53,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/transsion
 
+# Updatable APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/transsion/mt6893-common/mt6893-common-vendor.mk)
