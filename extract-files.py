@@ -98,6 +98,7 @@ blob_fixups: blob_fixups_user_type = {
 namespace_imports = [
     'device/transsion/mt6893-common',
     'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
     'hardware/transsion',
 ]
 
