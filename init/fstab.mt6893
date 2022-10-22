@@ -66,3 +66,5 @@ product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 /dev/block/by-name/otp /otp emmc defaults defaults
 /dev/block/by-name/vbmeta /vbmeta emmc defaults defaults
 /dev/block/by-name/tkv /tkv emmc defaults defaults
+
+/dev/block/zram0 none swap defaults zramsize=55%
