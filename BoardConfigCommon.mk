@@ -128,6 +128,9 @@ BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Inherit the dtb, dtbo, kernel and module configurations
 include device/transsion/mt6893-kernel/BoardConfigKernel.mk
 
