@@ -78,6 +78,9 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.cas-service.example-lazy
 
+# Dalvik configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
