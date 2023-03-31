@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Allow userspace reboots
+$(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
