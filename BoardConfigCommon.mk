@@ -102,6 +102,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt6893
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 include hardware/transsion/sepolicy/SEPolicy.mk
