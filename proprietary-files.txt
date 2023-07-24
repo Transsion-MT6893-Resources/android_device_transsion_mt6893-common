@@ -694,6 +694,61 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/slp_conf
 
+# IMS (system)
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# IMS (system) - from UP1A.231005.007
+system_ext/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
+system_ext/framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
+system_ext/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
+system_ext/framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
+system_ext/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
+system_ext/framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
+system_ext/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
+system_ext/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
+system_ext/priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
+
+# IMS (vendor)
+vendor/bin/hw/vtservice_hidl
+vendor/bin/ipsec_mon
+vendor/bin/lbs_hidl_service
+vendor/bin/rcs_volte_stack
+vendor/bin/volte_clientapi_ua
+vendor/bin/volte_rcs_ua
+vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/ipsec_mon.rc
+vendor/etc/init/lbs_hidl_service.rc
+vendor/etc/init/volte_clientapi_ua.rc
+vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
+vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib/libipsec_ims_shr.so
+vendor/lib/librcs_interface.so
+vendor/lib/librcs_volte_core.so
+vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
+vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib64/lbs_hidl_service-impl.so
+vendor/lib64/libipsec_ims_shr.so
+vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
 # Init
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.charger.rc
