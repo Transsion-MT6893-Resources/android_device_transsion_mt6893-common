@@ -102,6 +102,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.mt6893
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2024-10-05
 
