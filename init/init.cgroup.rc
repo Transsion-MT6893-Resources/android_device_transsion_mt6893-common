@@ -14,10 +14,20 @@ on charger
     write /sys/class/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq 0
     write /sys/kernel/helio-dvfsrc/dvfsrc_force_vcore_dvfs_opp 255
 
+on property:vendor.all.modules.ready=1
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "sugov_ext"
+    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/down_rate_limit_us 20000
+
+    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "sugov_ext"
+    write /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/down_rate_limit_us 20000
+
+    write /sys/devices/system/cpu/cpufreq/policy7/scaling_governor "sugov_ext"
+    write /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/down_rate_limit_us 20000
+
 on post-fs-data
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor sugov_ext
-    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor sugov_ext
-    write /sys/devices/system/cpu/cpufreq/policy7/scaling_governor sugov_ext
     write /proc/sys/kernel/sched_pelt_multiplier 4
 
 on init
