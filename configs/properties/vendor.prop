@@ -1,4 +1,5 @@
 # AAL
+persist.vendor.sys.mtkaal.function=0
 ro.vendor.mtk_aal_support=1
 
 # AEE
