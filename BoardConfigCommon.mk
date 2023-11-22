@@ -68,6 +68,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 
 # Partitions (Dynamic)
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_SUPER_PARTITION_SIZE ?= 9126805504
 BOARD_SUPER_PARTITION_GROUPS := transsion_dynamic_partitions
 BOARD_TRANSSION_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor
