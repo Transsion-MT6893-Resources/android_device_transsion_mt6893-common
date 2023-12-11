@@ -175,6 +175,10 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     ueventd.mt6893.rc
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.transsion
