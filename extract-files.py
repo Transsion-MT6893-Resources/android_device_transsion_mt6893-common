@@ -27,7 +27,16 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
     'vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service': blob_fixup()
         .replace_needed('android.hardware.power-V2-ndk_platform.so', 'android.hardware.power-V2-ndk.so'),
+    (
+        'vendor/bin/mnld',
+        'vendor/lib/libaalservice.so',
+        'vendor/lib/librgbwlightsensor.so',
+        'vendor/lib64/libaalservice.so',
+        'vendor/lib64/librgbwlightsensor.so',
+    ): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     ('vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     ('vendor/lib/libh264enc_sa.ca7.so', 'vendor/lib/libvp8dec_sa.ca7.so'): blob_fixup()
         .clear_symbol_version('__aeabi_memclr')
