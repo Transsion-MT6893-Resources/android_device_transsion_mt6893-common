@@ -130,6 +130,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.transsion.rc",
+    src: "init.transsion.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
     name: "meta_init.connectivity.common.rc",
     src: "meta_init.connectivity.common.rc",
     sub_dir: "init/hw",

@@ -165,6 +165,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6893.rc \
     init.sensor_2_0.rc \
     init.stnfc.rc \
+    init.transsion.rc \
     meta_init.connectivity.common.rc \
     meta_init.connectivity.rc \
     meta_init.modem.rc \
@@ -296,6 +297,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Soundtrigger
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
+
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.transsion
 
 # Updatable APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)

@@ -116,6 +116,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 include hardware/transsion/sepolicy/SEPolicy.mk
 
+# Touch
+SOONG_CONFIG_NAMESPACES += TRANSSION_TOUCH
+SOONG_CONFIG_TRANSSION_TOUCH := HIGH_TOUCH_POLLING_PATH
+SOONG_CONFIG_TRANSSION_TOUCH_HIGH_TOUCH_POLLING_PATH := /proc/game_state
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2024-10-05
 
