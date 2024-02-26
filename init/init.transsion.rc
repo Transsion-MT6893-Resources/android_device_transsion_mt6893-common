@@ -7,3 +7,6 @@
 on boot
     # Touch
     chown system system /proc/game_state
+
+on property:sys.boot_completed=1
+    write /sys/devices/platform/odm/odm:tran_battery/OTG_CTL 1
