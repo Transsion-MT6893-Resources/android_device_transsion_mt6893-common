@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
     libaudiofoundation \
     libhapticgenerator
 
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio_param/,$(TARGET_COPY_OUT_VENDOR)/etc/audio_param) \
