@@ -33,7 +33,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot-service.default \
+    com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
 
 PRODUCT_PACKAGES_DEBUG += \
