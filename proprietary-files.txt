@@ -1471,7 +1471,6 @@ vendor/etc/seccomp_policy/mediaswcodec.policy
 
 # Sensors
 vendor/lib/libfile_op.so
-vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mt6893.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libhwm.so
