@@ -1,0 +1,27 @@
+From 751f22b4c10e8db9f5b198aa18d8e5e779c95946 Mon Sep 17 00:00:00 2001
+From: Sarthak Roy <sarthakroy2002@gmail.com>
+Date: Mon, 17 Jun 2024 22:03:29 +0530
+Subject: [PATCH 2/3] ImsService: Fix ImsKeeperReceiver receiver
+
+Signed-off-by: Sarthak Roy <sarthakroy2002@gmail.com>
+Change-Id: I3734111308d255513107c90a80129f956311266d
+---
+ AndroidManifest.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 889dbe1..b767245 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -70,7 +70,7 @@
+                 <action android:name="android.telephony.ims.ImsService"/>
+             </intent-filter>
+         </service>
+-        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver" androidprv:removable="true">
++        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver">
+             <intent-filter>
+                 <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED"/>
+             </intent-filter>
+-- 
+2.39.5
+
