@@ -16,8 +16,11 @@ AB_OTA_PARTITIONS += \
     vbmeta \
     vbmeta_system \
     vbmeta_vendor \
-    vendor \
-    vendor_boot
+    vendor
+
+ifeq ($(WITH_GMS),true)
+AB_OTA_PARTITIONS += vendor_boot
+endif
 
 # Architecture
 TARGET_ARCH := arm64
