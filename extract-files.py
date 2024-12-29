@@ -57,6 +57,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    'vendor/lib64/libmnl.so': blob_fixup()
+        .add_needed('libcutils.so'),
 }   # fmt: skip
 
 namespace_imports = [
