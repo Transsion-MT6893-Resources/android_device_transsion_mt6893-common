@@ -15,7 +15,7 @@ from extract_utils.main import (
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsink.so': blob_fixup()
-        .add_needed('libshim_sink.so'),
+        .add_needed('libaudioclient_shim.so'),
     'vendor/bin/factory': blob_fixup()
         .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
