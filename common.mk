@@ -94,6 +94,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.default
 
+# Dolby
+$(call inherit-product, vendor/sony/dolby/setup.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
