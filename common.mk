@@ -53,6 +53,42 @@ PRODUCT_PACKAGES += \
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Init
+PRODUCT_PACKAGES += \
+    init.insmod.sh
+
+PRODUCT_PACKAGES += \
+    fstab.mt6893 \
+    fstab.mt6893.vendor_ramdisk
+
+PRODUCT_PACKAGES += \
+    factory_init.connectivity.common.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init_conninfra.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6893.rc \
+    init.mt6893.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.mt6893.rc \
+    init.sensor_2_0.rc \
+    init.stnfc.rc \
+    meta_init.connectivity.common.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    meta_init.vendor.rc \
+    multi_init.rc \
+    ueventd.mt6893.rc
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
