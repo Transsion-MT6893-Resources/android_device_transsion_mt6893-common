@@ -104,6 +104,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+include hardware/transsion/sepolicy/SEPolicy.mk
 
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2024-10-05
