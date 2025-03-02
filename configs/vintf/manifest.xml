@@ -5,10 +5,6 @@
         manifest_apuware_utils.xml
         manifest_apuware_hmp.xml
         manifest_fingerprint.xml
-        manifest_tranlog.xml
-        manifest_tranlogconfig.xml
-        manifest_trandatacenter.xml
-        trans_sched_device.xml
         manifest_sensor_hidl_v2.xml
         manifest_audio.xml
         manifest_dsds.xml
@@ -16,14 +12,11 @@
         manifest_em.xml
         manifest_bgservice.xml
         manifest_videotelephony.xml
-        manifest_nfc.xml
         manifest_km41.xml
         manifest_tee.xml
         manifest_trustonic.xml
-        manifest_log.xml
         manifest_mdmonitor.xml
         manifest_aee.xml
-        manifest_boot.xml
         manifest_netdagent.xml
         manifest_tetheroffloadservice.xml
         manifest_pq.xml
@@ -31,7 +24,6 @@
         manifest_mmagent.xml
         manifest_dmc.xml
         manifest_apmonitor.xml
-        manifest_composer.xml
         manifest_target_level_r.xml
         manifest.xml
 -->
@@ -77,26 +69,6 @@
         <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.boot</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBootControl</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBootControl/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <version>2.6</version>
@@ -125,16 +97,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@4.0::IAllocator/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IComposer</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::IComposer/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
@@ -170,16 +132,6 @@
         </interface>
         <fqname>@1.0::IOmx/default</fqname>
         <fqname>@1.0::IOmxStore/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
@@ -435,24 +387,6 @@
         <fqname>@1.1::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.log</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILog</name>
-            <instance>ATMWiFiHidlServer</instance>
-            <instance>ConnsysFWHidlServer</instance>
-            <instance>LoggerHidlServer</instance>
-            <instance>MobileLogHidlServer</instance>
-            <instance>ModemLogHidlServer</instance>
-        </interface>
-        <fqname>@1.0::ILog/ATMWiFiHidlServer</fqname>
-        <fqname>@1.0::ILog/ConnsysFWHidlServer</fqname>
-        <fqname>@1.0::ILog/LoggerHidlServer</fqname>
-        <fqname>@1.0::ILog/MobileLogHidlServer</fqname>
-        <fqname>@1.0::ILog/ModemLogHidlServer</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.mdmonitor</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -580,46 +514,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IVideoTelephony/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.trandatacenter</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranDataCenter</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranDataCenter/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.tranlog</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranLog</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranLog/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.tranlogconfig</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranLogConfig</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranLogConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.performance.sched</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITransSched</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITransSched/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.trustonic.tee</name>
