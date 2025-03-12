@@ -25,6 +25,25 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.power-V2-ndk_platform.so', 'android.hardware.power-V2-ndk.so'),
     ('vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    ('vendor/lib/libh264enc_sa.ca7.so', 'vendor/lib/libvp8dec_sa.ca7.so'): blob_fixup()
+        .clear_symbol_version('__aeabi_memclr')
+        .clear_symbol_version('__aeabi_memclr4')
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memcpy4')
+        .clear_symbol_version('__aeabi_memmove')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    (
+        'vendor/lib/libmp4enc_sa.ca7.so',
+        'vendor/lib/libmp4enc_xa.ca7.so',
+        'vendor/lib/libthha.so',
+        'vendor/lib/libvcodec_oal.so',
+        'vendor/lib/libvp9dec_sa.ca7.so'
+    ): blob_fixup()
+        .clear_symbol_version('__aeabi_memclr')
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
 }   # fmt: skip
 
 namespace_imports = [
