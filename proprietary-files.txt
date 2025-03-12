@@ -1,6 +1,22 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
 ## from Tecno Camon 20s Pro 5G (CK8nB-H931KLM-U-BASE-241106V368).
 
+# AAL
+vendor/lib/libaal_cust.so
+vendor/lib/libaal_key.so
+vendor/lib/libaal_mtk.so
+vendor/lib/libaalservice.so
+vendor/lib/libappgamepq.so
+vendor/lib/libdre.so
+vendor/lib64/libaaa_ltm.so
+vendor/lib64/libaaa_ltmx.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_mtk.so
+vendor/lib64/libaalservice.so
+vendor/lib64/libappgamepq.so
+vendor/lib64/libdre.so
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/getgameserver
