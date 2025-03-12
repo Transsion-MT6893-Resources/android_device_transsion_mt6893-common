@@ -1381,6 +1381,13 @@ vendor/etc/mdota/MTK_OTA_CU.mcfota
 vendor/etc/mdota/MTK_OTA_REL10.mcfota
 vendor/etc/mdota/MTK_OTA_REL11.mcfota
 
+# Seccomp
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
+
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
 vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
