@@ -273,6 +273,9 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.transsion
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/sensors/,$(TARGET_COPY_OUT_VENDOR)/etc/sensors)
 
