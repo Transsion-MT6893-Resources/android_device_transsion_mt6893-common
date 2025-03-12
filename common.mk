@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas-service.example-lazy
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
