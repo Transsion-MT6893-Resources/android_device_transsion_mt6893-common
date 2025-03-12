@@ -100,6 +100,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Engineermode
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.engineermode.xml
+
 # FastbootD
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
