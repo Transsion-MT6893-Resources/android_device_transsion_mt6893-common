@@ -214,6 +214,20 @@ vendor/lib/hw/libSoftGatekeeper.so:vendor/lib/hw/gatekeeper.default.so
 vendor/lib64/hw/libMcGatekeeper.so:vendor/lib64/hw/gatekeeper.trustonic.so
 vendor/lib64/hw/libSoftGatekeeper.so:vendor/lib64/hw/gatekeeper.default.so
 
+# Init
+vendor/etc/init/init.bt_drv.rc
+vendor/etc/init/init.charger.rc
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.conninfra.rc
+vendor/etc/init/init.defrag_gc_ko.rc
+vendor/etc/init/init.dev_gc.rc
+vendor/etc/init/init.fmradio_drv.rc
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.otg.rc
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/vendor.goodix.rc
+vendor/etc/init.insmod.mt6893.cfg
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
