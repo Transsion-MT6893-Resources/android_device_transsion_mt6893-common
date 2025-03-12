@@ -875,6 +875,32 @@ vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib64/libMtkOmxCore.so
 
+# Miscellaneous
+vendor/bin/doeapp-memtester
+vendor/etc/init/bootperf.rc
+vendor/etc/partition_permission.sh
+vendor/etc/public.libraries.txt
+vendor/etc/task_profiles.json
+vendor/lib/libJpgEncPipe.so
+vendor/lib/libOpenCL.so
+vendor/lib/libTEECommon.so
+vendor/lib/libjpeg-alpha-oal_vendor.so
+vendor/lib/libjpeg-alpha_vendor.so
+vendor/lib/libmtcloader.so
+vendor/lib/libtranlog.so
+vendor/lib64/libJpgEncPipe.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libTEECommon.so
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libhfmanager.so
+vendor/lib64/libhfmanagerwrapper.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/libjpeg-alpha-oal_vendor.so
+vendor/lib64/libjpeg-alpha_vendor.so
+vendor/lib64/libmipc.so
+vendor/lib64/libmtcloader.so
+vendor/lib64/libtranlog.so
+
 # Mmagent
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
