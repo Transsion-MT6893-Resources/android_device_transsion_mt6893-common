@@ -327,6 +327,17 @@ vendor/lib64/libcustom_nvram.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+# Pnpmgr
+vendor/bin/pnpmgr
+vendor/etc/init/init.pnpmgr.fpsgo.boost.gki.rc
+vendor/etc/init/init.pnpmgr.fre.gki.rc
+vendor/etc/init/init.pnpmgr.gki.rc
+vendor/etc/init/init.pnpmgr_game_mode.gki.rc
+vendor/etc/init/init.pnpmgr_game_record.gki.rc
+vendor/etc/pnpmgr.db
+vendor/lib/libpnpmgr.so
+vendor/lib64/libpnpmgr.so
+
 # Power
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/bin/fpsgo
