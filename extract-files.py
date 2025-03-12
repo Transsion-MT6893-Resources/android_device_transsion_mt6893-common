@@ -38,6 +38,23 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    (
+        'vendor/lib/hw/awinic.audio.effect.so',
+        'vendor/lib/hw/gatekeeper.default.so',
+        'vendor/lib/hw/gatekeeper.trustonic.so',
+        'vendor/lib/hw/kmsetkey.default.so',
+        'vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so',
+        'vendor/lib/libspeech_enh_lib.so',
+        'vendor/lib64/hw/gatekeeper.default.so',
+        'vendor/lib64/hw/gatekeeper.trustonic.so',
+        'vendor/lib64/hw/gf_fingerprint.default.so',
+        'vendor/lib64/hw/kmsetkey.default.so',
+        'vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so',
+        'vendor/lib64/libspeech_enh_lib.so',
+        'vendor/lib64/libwifi-hal-mtk.so'
+    ): blob_fixup()
+        .patchelf_version('0_17_2')
+        .fix_soname(),
     ('vendor/lib/libh264enc_sa.ca7.so', 'vendor/lib/libvp8dec_sa.ca7.so'): blob_fixup()
         .clear_symbol_version('__aeabi_memclr')
         .clear_symbol_version('__aeabi_memclr4')
