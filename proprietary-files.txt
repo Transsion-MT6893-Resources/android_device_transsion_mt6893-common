@@ -200,6 +200,14 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libwvhidl.so
 
+# Fuelgauged
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib/libfgauge_gm30.so
+vendor/lib64/libfgauge_gm30.so
+
 # Gatekeeper
 vendor/lib/hw/libMcGatekeeper.so:vendor/lib/hw/gatekeeper.trustonic.so
 vendor/lib/hw/libSoftGatekeeper.so:vendor/lib/hw/gatekeeper.default.so
