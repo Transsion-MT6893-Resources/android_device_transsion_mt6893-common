@@ -31,6 +31,13 @@ PRODUCT_PACKAGES += \
 # Allow userspace reboots
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl
+
+PRODUCT_PACKAGES += \
+    audio.bluetooth.default
+
 # Boot control
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
