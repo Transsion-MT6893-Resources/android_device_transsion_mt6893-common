@@ -79,7 +79,7 @@ vendor/lib/librt_extamp_intf.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
-vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib/vendor.mediatek.hardware.audio@7.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6893.so
 vendor/lib64/hw/audio.r_submix.mt6893.so
@@ -115,7 +115,7 @@ vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libtrm.so
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
-vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/vendor.mediatek.hardware.audio@7.1.so;MODULE_SUFFIX=_vendor
 
 # Audio (Configs)
 vendor/etc/audio_param/AudioParamOptions.xml
