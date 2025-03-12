@@ -121,3 +121,22 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
+
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
+vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
+vendor/bin/kmsetkey_ca.trustonic
+vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc
+vendor/etc/init/trustonic.mc_kmsetkey_ca.rc
+vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib/hw/kmsetkey.trustonic.so:vendor/lib/hw/kmsetkey.default.so
+vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib/libMcClient.so
+vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
+vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+vendor/lib64/hw/kmsetkey.trustonic.so:vendor/lib64/hw/kmsetkey.default.so
+vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib64/libMcClient.so
+vendor/lib64/libkmsetkey.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
