@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     ueventd.mt6893.rc
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.transsion
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
