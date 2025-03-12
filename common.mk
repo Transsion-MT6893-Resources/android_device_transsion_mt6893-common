@@ -175,6 +175,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/transsion
 
+# Soundtrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl
+
 # Updatable APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
