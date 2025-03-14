@@ -1,3 +1,6 @@
+# AAL
+ro.vendor.mtk_aal_support=1
+
 # AEE
 persist.vendor.anr.dumpthr=1
 persist.vendor.kernel.version=5
