@@ -119,20 +119,8 @@ ro.vendor.mtk_nn.option=A,B,E,F,Z
 # NVRAM
 ro.vendor.mtk_eccci_c2k=1
 
-# Perf
-ro.vendor.powerhal_fling_mode_support=1
-ro.vendor.pref_scale_enable_cfg=1
-vendor.boostfwk.aosp_fling=1
-vendor.boostfwk.aosp_move=1
-vendor.boostfwk.fling_distance_dp=20
-vendor.boostfwk.launcher_use_interaction=1
-
-# Power
-ro.vendor.powerhal.gsi_watermark=500
-
 # PQ
 ro.vendor.mtk_pq_color_mode=3
-ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_support=2
 ro.vendor.pq.disp_lcm_name_support=0
 ro.vendor.pq.mtk_aal_support=1
