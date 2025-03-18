@@ -661,6 +661,15 @@ vendor/etc/slp_conf
 # IMS (system)
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
+system_ext/framework/mediatek-carrier-config-manager.jar
+system_ext/framework/mediatek-common.jar
+system_ext/framework/mediatek-framework.jar
+system_ext/framework/mediatek-ims-base.jar
+system_ext/framework/mediatek-ims-common.jar
+system_ext/framework/mediatek-ims-extension-plugin.jar
+system_ext/framework/mediatek-telecom-common.jar
+system_ext/framework/mediatek-telephony-base.jar
+system_ext/framework/mediatek-telephony-common.jar
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libimsma.so;DISABLE_CHECKELF
 system_ext/lib64/libimsma_adapt.so
@@ -676,17 +685,7 @@ system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-# IMS (system) - from UP1A.231005.007
-system_ext/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
-system_ext/framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
-system_ext/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
-system_ext/framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
-system_ext/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
-system_ext/framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
-system_ext/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
-system_ext/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
-system_ext/priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
+system_ext/priv-app/ImsService/ImsService.apk
 
 # IMS (vendor)
 vendor/bin/hw/vtservice_hidl
